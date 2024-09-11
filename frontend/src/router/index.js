@@ -15,6 +15,14 @@ const indexRoutes = [
       name: "about page",
     },
   },
+  {
+    path: "/task",
+    component: () => import("@/views/Task.vue"),
+    name: "Test",
+    meta: {
+      name: "task page",
+    },
+  },
 ];
 const router = new VueRouter({
   mode: "history",
